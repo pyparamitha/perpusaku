@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.wrp, .wrp-login, body {
+    height: 100vh;
+    background-image: url("../img/sj.jpg") !important;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card, .header {
+    background-color: pink!important;
+}
+.wrp-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.text-center {
+    text-align: center;
+}
+
+/* header */
+.header {
+    box-shadow: 0px 0px 10px 0px #ccc;
+    height: 100px;
+}
+.h-content {
+    display: flex;
+    width: 80vw;
+    height: 100%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .title h1 {
+    font-size: 1.4rem;
+}
+.header .nav-menu ul {
+    width: 50vw;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+.nav-menu li {
+    margin-left: 12px;
+}
+.nav-menu li a {
+    position: relative;
+    padding: 0 6px;
+    text-decoration: none;
+    color: #000;
+}
+.nav-menu li a::before{
+    transition: 0.4s;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0px;
+    margin: auto;
+    height: 2px;
+    background-color: #000;
+}
+.nav-menu li a:hover::before{
+    width: 50px;
+}
+
+/* content */
+.content {
+    padding: 12px;
+    width: 80vw;
+    margin: auto;
+}
+.content img {
+    width: 155px;
+}
+.content .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 180px);
+    grid-gap: 12px;
+    margin-top: 12px;
+}
+.card {
+    position: relative;
+    padding: 12px;
+    box-shadow: 0px 0px 10px 0px #ccc;
+}
+.detail {
+    overflow: auto;
+}
+.card-body table {
+    width: 100%;
+    white-space: nowrap;
+}
+.card-body th {
+    padding-right: 12px;
+}
+.card-body th, .card-body td {
+    text-align: left;
+}
+.card-body .description {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    background-color: rgb(253, 255, 255);
+    width: 120%;
+    left: 110%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    padding: 12px;
+}
+.card:hover .description {
+    display: block;
+}
+
+/* input group */
+.input-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    margin-top: 12px;
+}
+.input-group label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.input-group input {
+    width: 93%;
+    outline: none;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+/* button */
+.btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF869E;
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+    opacity: 0.6;
+    width: 180px;
+}
+.btn:hover {
+    opacity: 1;
+}
+.btn-primary {
+    background-color: #506dff !important;
+    color: rgb(250, 250, 250) !important;
+}
+.btn-danger {
+    background-color: #ff0000 !important;
+    color: rgb(250, 250, 250) !important;
+}
+.btn-success {
+    background-color: #13a513 !important;
+    color: rgb(250, 250, 250) !important;
+}
+
+/* dashboard */
+.dashboard-wrp {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+    margin-top: 12px;
+}
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 180px);
+    grid-gap: 12px;
+    margin-top: 12px;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+}
+.table th {
+    padding: 12px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+}
+.table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+.scroll {
+    overflow: auto;
+    white-space: nowrap;
+}
